@@ -1,0 +1,1312 @@
+[
+	{
+		"name": "Giant Sloth",
+		"size": "L",
+		"type": "beast",
+		"source": "CCodex",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 168,
+			"formula": "16d10 + 50"
+		},
+		"speed": {
+			"walk": 20,
+			"climb": 20
+		},
+		"str": 19,
+		"dex": 10,
+		"con": 19,
+		"int": 3,
+		"wis": 12,
+		"cha": 10,
+		"save": {
+			"str": "+7"
+		},
+		"skill": {
+			"athletics": "+7",
+			"perception": "+4"
+		},
+		"resist": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"passive": 14,
+		"cr": "7",
+		"page": 345,
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"trait": [
+			{
+				"name": "Foul Odor",
+				"entries": [
+					"Any creature that starts its turn within 15 feet of the giant sloth must succeed on a {@dc 15} Constitution saving throw or have disadvantage on its next attack roll or ability check."
+				]
+			},
+			{
+				"name": "Hunter's Dash (1/Day)",
+				"entries": [
+					"The giant sloth moves double its normal speed and has advantage on all of its attacks for 1 round."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The giant sloth makes two attacks. one with its claw and one with its bite. If the giant sloth is grappling a creature, it can also use its Sloth's Embrace once."
+				]
+			},
+			{
+				"name": "Claw",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}14 ({@damage 3d6 + 4}) slashing damage. The target is {@condition grappled} (escape {@dc 15}) if it is a Large or smaller creature and the sloth doesn't have another creature {@condition grappled}."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d8 + 4}) piercing damage."
+				]
+			},
+			{
+				"name": "Sloth's Embrace",
+				"entries": [
+					"The giant sloth crushes a creature it is grappling by pulling the creature against its fetid, furry chest. The target must make a {@dc 15} Strength saving throw, taking 27 ({@damage 6d8}) bludgeoning damage on a failed save, or half as much damage on a successful one. A creature that fails the save is also {@condition stunned} until the end of its next turn."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"environment": [
+			"grassland"
+		],
+		"fluff": {
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex/Giantsloth.jpg"
+					}
+				}
+			],
+			"entries": [
+				"{@i This elephant-sized beast has a pronounced snout with large canine teeth and claws like longswords. It spends most of its life slowly digesting its latest meal in its cool burrow.}",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Burrowers and Diggers",
+									"entries": [
+										"The carnivorous giant sloth lives in great dirt mounds dug to its satisfaction in hilly or grassland areas. Below the mound is a series of tunnels dug for escape and the storage of recent kills."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Hunter at the Water's Edge",
+									"entries": [
+										"These clever predators bury themselves in mud and grass and wait beside rivers, lakes, and ponds for prey to draw near. Once within range, the sloth moves with surprising speed and, like a trapdoor spider, rushes out to pull its prey back into its hunting hole."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Fetid Coats",
+									"entries": [
+										"The fur of the giant sloth is a matted nightmare of mud, blood, viscera, and mold. They apply fresh coats of mud when preparing to hunt, masking their scent for a short time. "
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex/giantsloth_token.png",
+		"miscTags": [
+			"MW",
+			"RCH"
+		],
+		"damageTags": [
+			"S",
+			"P",
+			"B"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"conditionInflict": [
+			"grappled",
+			"stunned"
+		]
+	},
+	{
+		"name": "War Priest",
+		"environment": [
+			"any"
+		],
+		"page": 411,
+		"size": "M",
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any race"
+			]
+		},
+		"source": "CCodex",
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			{
+				"ac": 16,
+				"from": [
+					"{@item chain mail|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 91,
+			"formula": "14d8 + 28"
+		},
+		"speed": {
+			"walk": 25
+		},
+		"str": 16,
+		"dex": 10,
+		"con": 14,
+		"int": 11,
+		"wis": 16,
+		"cha": 12,
+		"save": {
+			"con": "+5",
+			"wis": "+6"
+		},
+		"skill": {
+			"medicine": "+6",
+			"religion": "+3"
+		},
+		"passive": 13,
+		"cr": "8",
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The war priest makes three attacks with its imbued warhammer."
+				]
+			},
+			{
+				"name": "Imbued Warhammer",
+				"entries": [
+					"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage, or 8 ({@damage 1d10 + 3}) bludgeoning damage if used with two hands, plus 13 ({@damage 3d8}) radiant (good or neutral priests) or necrotic (evil priests) damage."
+				]
+			}
+		],
+		"reaction": [
+			{
+				"name": "Blessing of War",
+				"entries": [
+					"When an ally the war priest can see within 30 feet hits with a melee weapon attack, the war priest can make the weapon deal an extra 9 ({@damage 2d8}) radiant (good or neutral priests) or necrotic (evil priests) damage."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"fluff": {
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex/Warpriest.jpg"
+					}
+				}
+			],
+			"entries": [
+				"Priests lead a flock; some with words, and others by example. A war priest leads with words, actions, and no small amount of physical violence against its enemies. While a war priest leads the faithful, it also exemplifies the traits representative of its deity. The weapons may change, from the hammers and axes of dwarven gods to the swords of the elves to the shortswords of the halflings. Regardless of the deity, though, the ability to bring holy or unholy damage to the fight is the hallmark of the war priest. Unlike a war chaplain, a war priest is always counted among the commanders of an army and is often a personal adviser to the army's general. In some cases, the war priest also serves as a general."
+			]
+		},
+		"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex/warpriest_token.png",
+		"miscTags": [
+			"MW"
+		],
+		"damageTags": [
+			"B",
+			"R",
+			"N"
+		],
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"The war priest is a 7th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The war priest has the following cleric spells prepared:"
+				],
+				"spells": {
+					"0": {
+						"spells": [
+							"{@spell light}",
+							"{@spell sacred flame}",
+							"{@spell spare the dying}",
+							"{@spell thaumaturgy}"
+						]
+					},
+					"1": {
+						"slots": 4,
+						"spells": [
+							"{@spell bless}",
+							"{@spell command}",
+							"{@spell cure wounds}",
+							"{@spell shield of faith}"
+						]
+					},
+					"2": {
+						"slots": 3,
+						"spells": [
+							"{@spell aid}",
+							"{@spell hold person}",
+							"{@spell spiritual weapon}"
+						]
+					},
+					"3": {
+						"slots": 3,
+						"spells": [
+							"{@spell beacon of hope}",
+							"{@spell mass healing word}"
+						]
+					},
+					"4": {
+						"slots": 1,
+						"spells": [
+							"{@spell death ward}"
+						]
+					}
+				},
+				"ability": "wis",
+				"type": "spellcasting"
+			}
+		]
+	},
+	{
+		"name": "Mul Champion",
+		"size": "M",
+		"type": "humanoid",
+		"source": "DarkSunCreatureCatalog",
+		"alignment": [
+			"N"
+		],
+		"ac": [
+			{
+				"ac": 16,
+				"from": [
+					"chitin half-plate"
+				]
+			}
+		],
+		"hp": {
+			"formula": "17d8 + 75",
+			"average": 148
+		},
+		"speed": {
+			"walk": 25
+		},
+		"str": 20,
+		"dex": 12,
+		"con": 18,
+		"int": 13,
+		"wis": 11,
+		"cha": 10,
+		"passive": 14,
+		"cr": "10",
+		"fluff": {
+			"entries": [
+				"Bred by sorcerer-kings",
+				"muls combine what many consider the best traits of dwarves and humans. They are hardy, strong, resourceful, and quick to anger. With extensive and rigorous training, they make ideal soldiers.",
+				"Lore",
+				"A mul's performance in combat is never in question. But even the best gladiators and slaves are intractable and difficult to control. Many kill or maim their handlers. Nobles tolerate obstinate mul slaves because they make excellent warriors and draw crowds to the arenas. A powerful mul often takes command among slave gangs, substituting strength and ferocity for more traditional leadership skills. Many muls, unwilling to remain beneath the heel of another race, flee the cities to form savage desert tribes or stand as figureheads in resistances against the rule of the sorcerer-kings.",
+				"Muls mingle with other races, though humans and dwarves have little love for the creatures. Free muls become raiders, gang enforcers, or mercenaries, lending their superior strength and stamina to whatever force they join.",
+				"Info",
+				"The champion holds its head high and points its chin forward. The warrior's oiled muscles and polished armor gleam beneath the sun. This mul is a symbol of hope to the oppressed and a beacon of defiance against the corrupt elite. Mul champions hurl themselves into melee, inspiring others to take up arms against oppressors and enemies. These muls prefer to set themselves against other martial types, though they hold a particular hatred for spellcasters."
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://i.imgur.com/aW3WcQe.png"
+					}
+				}
+			]
+		},
+		"tokenUrl": "https://i.imgur.com/ytEa7X8.png",
+		"shortName": "Mul Champion",
+		"languages": [
+			"Common",
+			"Dwarvish"
+		],
+		"languageTags": [
+			"C",
+			"D"
+		],
+		"save": {
+			"str": "+8",
+			"con": "+8",
+			"dex": "+5"
+		},
+		"trait": [
+			{
+				"name": "Incredible Toughness",
+				"entries": [
+					"The mul maximum hit point increase by 1 per level. The mul has advantage on saving throws against poison, as well as to resist being {@condition charmed} or {@condition paralyzed}."
+				]
+			},
+			{
+				"name": "Brute",
+				"entries": [
+					"A melee weapon deals one extra die of its damage when the mul hits with it (included in the attack)."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The mul makes four melee attacks with its greatsword or four ranged attacks with its handaxes."
+				]
+			},
+			{
+				"name": "Steel Greatsword",
+				"entries": [
+					"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}17 ({@damage 4d6 + 5}) slashing damage."
+				]
+			},
+			{
+				"name": "Handaxe",
+				"entries": [
+					"{@atk mw,rw} {@hit 9} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}8 ({@damage 1d6 + 5}) slashing damage in melee, or 8 ({@damage 1d6 + 5}) slashing damage at range."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"S"
+		],
+		"isNpc": false,
+		"environment": [
+			"desert",
+			"forest",
+			"hill",
+			"mountain",
+			"urban"
+		],
+		"skill": {
+			"athletics": "+9",
+			"intimidation": "+4",
+			"insight": "+4",
+			"perception": "+4"
+		},
+		"traitTags": [
+			"Brute"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"THW"
+		],
+		"reaction": [
+			{
+				"name": "Combat Superiority - Disarming Attack",
+				"entries": [
+					"When the mul hits a creature with a weapon attack, he can attempt to disarm the target, forcing it to drop one item of the mul'schoice that it's holding. The mul add {@dice 1d10} to the attack's damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet. The saving throw against the attack is 17 on Constitution."
+				]
+			},
+			{
+				"name": "Combat Superiority - Evasive Footwork",
+				"entries": [
+					"When the mul move, it rolls {@dice 1d10} and add the number rolled to its AC until it stops moving. The saving throw against the attack is 17 on Constitution."
+				]
+			},
+			{
+				"name": "Combat Superiority - Riposte",
+				"entries": [
+					"When a creature misses the mul with a melee attack, it can use its reaction to make a melee weapon attack against the creature. If it hits, it adds {@dice 1d10} to the attack's damage roll. The saving throw against the attack is 17 on Constitution."
+				]
+			},
+			{
+				"name": "Combat Superiority - Trip Attack",
+				"entries": [
+					"When it hits a creature with a weapon attack, the mul can attempt to knock the target down. It adds {@dice 1d10} to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, the target is knocked {@condition prone}. The saving throw against the attack is 17 on Constitution."
+				]
+			}
+		],
+		"conditionInflict": [
+			"prone"
+		]
+	},
+	{
+		"name": "Woolly Rhinoceros (Pleistocene Animal)",
+		"size": "L",
+		"type": "beast",
+		"source": "FEF",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 14,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 136,
+			"formula": "13d10 + 65"
+		},
+		"speed": {
+			"walk": 35
+		},
+		"str": 23,
+		"dex": 8,
+		"con": 20,
+		"int": 3,
+		"wis": 12,
+		"cha": 5,
+		"passive": 11,
+		"cr": "6",
+		"page": 186,
+		"trait": [
+			{
+				"name": "Nearsighted",
+				"entries": [
+					"A woolly rhinoceros has tactical disadvantage on Perception checks involving sight."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"A woolly rhinoceros attacks once by goring. If the target is knocked {@condition prone}, the rhino stomps the same creature as a bonus action."
+				]
+			},
+			{
+				"name": "Gore",
+				"entries": [
+					"{@atk m} {@hit +9} to hit, reach 5 ft., one creature. {@h}17 ({@damage 2d10 + 6}) piercing damage and the target must make a successful {@dc 17} Dexterity saving throw or be knocked {@condition prone} and stomped."
+				]
+			},
+			{
+				"name": "Stomp",
+				"entries": [
+					"{@atk m} {@hit +9} to hit, reach 5 ft., one creature. {@h}22 ({@damage 3d10 + 6}) bludgeoning damage."
+				]
+			}
+		],
+		"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/FEF/Woolly%20Rhinoceros%20(Pleistocene%20Animal).png",
+		"actionTags": [
+			"Multiattack"
+		],
+		"damageTags": [
+			"P",
+			"B"
+		],
+		"conditionInflicted": [
+			"prone"
+		],
+		"conditionInflict": [
+			"prone"
+		]
+	},
+	{
+		"name": "Hobgoblin King",
+		"source": "MonsterManualExpanded2",
+		"page": 0,
+		"size": "M",
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"goblinoid"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 18,
+				"from": [
+					"{@item plate armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 150,
+			"formula": "20d8 + 60"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 18,
+		"dex": 14,
+		"con": 16,
+		"int": 14,
+		"wis": 12,
+		"cha": 16,
+		"save": {
+			"con": "+7",
+			"int": "+6",
+			"wis": "+5",
+			"cha": "+7"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 11,
+		"languages": [
+			"Common",
+			"Goblin"
+		],
+		"cr": "11",
+		"trait": [
+			{
+				"name": "Aura of Fervor",
+				"entries": [
+					"An ally that is within 30 feet of the hobgoblin and can see and hear the hobgoblin has advantage to saving throws against being {@condition charmed} and {@condition frightened}, and all attack rolls against enemies within 30 feet of the hobgoblin, provided that the hobgoblin isn't {@condition incapacitated}."
+				]
+			},
+			{
+				"name": "Indomitable (2/Day)",
+				"entries": [
+					"The hobgoblin rerolls a failed save. It must use the new roll."
+				]
+			},
+			{
+				"name": "Martial Advantage (1/Turn)",
+				"entries": [
+					"The hobgoblin can deal an extra 17 ({@damage 5d6}) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the hobgoblin and that ally isn't {@condition incapacitated}."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The hobgoblin makes three greatsword attacks. It can use Maneuver Allies, Hold the Line, or Unleash Hell in place of one of these attacks, if available."
+				]
+			},
+			{
+				"name": "Greatsword",
+				"entries": [
+					"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+				]
+			},
+			{
+				"name": "Maneuver Allies {@recharge 5}",
+				"entries": [
+					"Up to four allies within 60 feet of this hobgoblin that can hear it can each use their reaction to move up to half their speed without provoking opportunity attacks."
+				]
+			},
+			{
+				"name": "Hold the Line",
+				"entries": [
+					"(1/Day). The hobgoblin targets each nonhostile creature of its choice that is within 60 feet of it, can hear it, is within 5 feet of an ally of the hobgoblin and that ally isn't {@condition incapacitated} and not already affected by Hold the Line. Until the end of the hobgoblin's next turn, creatures provoke an {@action opportunity attack} from the target when they move 5 feet or more while within the target's reach, and if the target hits a creature with an opportunity attack, the creature's speed is reduced to 0 until the end of the current turn."
+				]
+			},
+			{
+				"name": "Unleash Hell",
+				"entries": [
+					"(1/Day). Up to 6 nonhostile creatures of the hobgoblin's choice that is within 60 feet of it, can hear it, and not already affected by Unleash Hell can use their reaction to move up to half their speed and make one weapon attack."
+				]
+			}
+		],
+		"reaction": [
+			{
+				"name": "General's Guidance (5/day)",
+				"entries": [
+					"When a creature the hobgoblin can see within 30 feet of it makes an attack roll or saving throw, and the creature can hear the hobgoblin, the hobgoblin grants advantage to that roll."
+				]
+			}
+		],
+		"legendary": [
+			{
+				"name": "Move",
+				"entries": [
+					"The hobgoblin moves up to half its speed."
+				]
+			},
+			{
+				"name": "Greatsword (Costs 2 Actions)",
+				"entries": [
+					"The hobgoblin makes a greatsword attack."
+				]
+			},
+			{
+				"name": "Tactical Edge (Cost 2 Actions)",
+				"entries": [
+					"Roll a {@dice d6} for the hobgoblin. The number rolled on the die is subtracted from the next attack roll made against the hobgoblin or an ally of its choice within the next minute."
+				]
+			},
+			{
+				"name": "Command Allies (Costs 1-3 Actions)",
+				"entries": [
+					"The hobgoblin chooses up to 3 allies it can see within 60 feet of it. If the target can see and hear the hobgoblin, the target can use its reaction to make one weapon attack. It costs 1 legendary action per target."
+				]
+			}
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"GO"
+		],
+		"damageTags": [
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/token/hobgoblinking.png",
+		"fluff": {
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/hobgoblinking.webp"
+					}
+				}
+			]
+		}
+	},
+	{
+		"name": "Barbarian King",
+		"source": "MonsterManualExpanded2",
+		"page": 0,
+		"size": "M",
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any"
+			]
+		},
+		"alignment": [
+			"NX",
+			"C",
+			"G",
+			"NY",
+			"E"
+		],
+		"ac": [
+			18
+		],
+		"hp": {
+			"average": 230,
+			"formula": "20d8 + 140"
+		},
+		"speed": {
+			"walk": 40
+		},
+		"str": 24,
+		"dex": 12,
+		"con": 24,
+		"int": 8,
+		"wis": 10,
+		"cha": 8,
+		"save": {
+			"str": "+12",
+			"con": "+12"
+		},
+		"passive": 10,
+		"languages": [
+			"any one language (usually Common)"
+		],
+		"cr": "15",
+		"trait": [
+			{
+				"name": "Brutal Critical",
+				"entries": [
+					"The barbarian king rolls two additional weapon damage dice when determining extra damage for a critical hit with a melee attack."
+				]
+			},
+			{
+				"name": "Rage (Recharges after a Short or Long Rest)",
+				"entries": [
+					"As a bonus action, the barbarian king can enter a rage at the start of its turn. The rage lasts for 1 minute or until the barbarian king is {@condition incapacitated}. While raging, the barbarian king gains the following benefits:",
+					"• The barbarian king has advantage on Strength checks and Strength saving throws.",
+					"• When it makes a melee weapon attack, the barbarian king gains a +4 bonus to the damage roll.",
+					"• The barbarian king has resistance to bludgeoning, piercing, and slashing damage.",
+					"• The barbarian king can make a single melee weapon attack as a bonus action.",
+					"• The barbarian king can't be {@condition charmed} or {@condition frightened}."
+				]
+			},
+			{
+				"name": "Reckless",
+				"entries": [
+					"At the start of its turn, the barbarian king can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The barbarian king makes two greataxe attacks or two longbow attacks."
+				]
+			},
+			{
+				"name": "+2 Greataxe",
+				"entries": [
+					"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}16 ({@damage 2d6 + 9}) slashing damage, or 20 ({@damage 2d6 + 13}) slashing damage while raging."
+				]
+			},
+			{
+				"name": "Longbow",
+				"entries": [
+					"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}5 ({@damage 1d8 + 1}) piercing damage."
+				]
+			},
+			{
+				"name": "War Cry (1/Day)",
+				"entries": [
+					"Each creature of the barbarian king's choice that is within 30 feet of it, can hear it, and not already affected by War Cry gain advantage on attack rolls until the start of the barbarian king's next turn. All other creatures within 30 feet of it, can hear it, and not already affected by War Cry must make a {@dc 20} Wisdom saving throw or become {@condition frightened} until the end of the barbarian king's next turn. The barbarian king can then make one attack as a bonus action."
+				]
+			}
+		],
+		"reaction": [
+			{
+				"name": "Retaliation",
+				"entries": [
+					"When the barbarian king takes damage from a creature within 5 feet of it, the barbarian king can make one melee weapon attack against the creature."
+				]
+			}
+		],
+		"legendary": [
+			{
+				"name": "Move",
+				"entries": [
+					"The barbarian king moves up to half its speed."
+				]
+			},
+			{
+				"name": "Attack (Costs 2 Actions)",
+				"entries": [
+					"The barbarian king makes a melee weapon attack."
+				]
+			},
+			{
+				"name": "Command of the Horde (Costs 3 Actions)",
+				"entries": [
+					"The barbarian king chooses up to four allies it can see within 30 feet of it. If the target can see and hear the barbarian king, the target can use its reaction to make one weapon attack."
+				]
+			}
+		],
+		"traitTags": [
+			"Reckless"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"damageTags": [
+			"S",
+			"P"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"RNG"
+		],
+		"conditionInflicted": [
+			"frightened"
+		],
+		"conditionInflict": [
+			"frightened"
+		],
+		"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/token/barbarianking.png",
+		"fluff": {
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/barbarianking.webp"
+					}
+				}
+			]
+		}
+	},
+	{
+		"name": "Mageslayer",
+		"source": "MonsterManualExpanded2",
+		"page": 0,
+		"size": "M",
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any"
+			]
+		},
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"{@item chain shirt|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 71,
+			"formula": "11d8 + 22"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 14,
+		"dex": 14,
+		"con": 14,
+		"int": 12,
+		"wis": 12,
+		"cha": 16,
+		"save": {
+			"wis": "+4",
+			"cha": "+6"
+		},
+		"skill": {
+			"arcana": "+4",
+			"perception": "+4"
+		},
+		"passive": 14,
+		"languages": [
+			"any two languages (usually Common)"
+		],
+		"cr": "6",
+		"spellcasting": [
+			{
+				"name": "Spellcasting",
+				"headerEntries": [
+					"The mageslayer is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It has the following sorcerer spells prepared:"
+				],
+				"spells": {
+					"0": {
+						"spells": [
+							"{@spell fire bolt}",
+							"{@spell mage hand}",
+							"{@spell true strike}"
+						]
+					},
+					"1": {
+						"slots": 4,
+						"spells": [
+							"{@spell absorb elements|XGE}",
+							"{@spell detect magic}"
+						]
+					},
+					"2": {
+						"slots": 3,
+						"spells": [
+							"{@spell Melf's acid arrow}",
+							"{@spell mind spike|XGE}"
+						]
+					},
+					"3": {
+						"slots": 3,
+						"spells": [
+							"{@spell counterspell}",
+							"{@spell dispel magic}",
+							"{@spell fireball}"
+						]
+					}
+				},
+				"ability": "cha",
+				"type": "spellcasting"
+			}
+		],
+		"trait": [
+			{
+				"name": "Sorcery Points",
+				"entries": [
+					"The mageslayer has 6 sorcery points. It can spend 1 or more sorcery points to gain one of the following benefits:",
+					"Quickened Spell: When the mageslayer casts a spell that has a casting time of 1 action, the mageslayer can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.",
+					"Subtle Spell: When the mageslayer casts a spell, it can spend 1 sorcery point to cast it without any somatic or verbal components."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The mageslayer makes two melee attacks or two ranged attacks."
+				]
+			},
+			{
+				"name": "Mace",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage, and the creature has disadvantage on the saving throw it makes to maintain its concentration."
+				]
+			},
+			{
+				"name": "Longbow",
+				"entries": [
+					"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage and the creature has disadvantage on the saving throw it makes to maintain its concentration."
+				]
+			}
+		],
+		"reaction": [
+			{
+				"name": "Mage Strike",
+				"entries": [
+					"When a creature within 5 feet of the mageslayer casts a spell, the mageslayer can make a melee weapon attack against that creature."
+				]
+			}
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"C",
+			"X"
+		],
+		"damageTags": [
+			"B",
+			"P"
+		],
+		"spellcastingTags": [
+			"CS"
+		],
+		"miscTags": [
+			"MW",
+			"RW",
+			"RNG"
+		],
+		"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/token/mageslayer.png",
+		"fluff": {
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/mageslayer.webp"
+					}
+				}
+			]
+		}
+	},
+	{
+		"source": "xge_npc",
+		"name": "Drunken Master",
+		"size": "M",
+		"type": {
+			"type": "humanoid",
+			"tags": [
+				"any race"
+			]
+		},
+		"alignment": [
+			"A"
+		],
+		"ac": [
+			{
+				"ac": 20,
+				"from": [
+					"unarmored defense"
+				]
+			}
+		],
+		"hp": {
+			"average": 109,
+			"formula": "12d8 + 55"
+		},
+		"speed": {
+			"walk": 50
+		},
+		"str": 20,
+		"dex": 20,
+		"con": 20,
+		"int": 20,
+		"wis": 20,
+		"cha": 20,
+		"skill": {
+			"brewer'ssupplies": "+9",
+			"performance": "+9"
+		},
+		"conditionImmune": [
+			"poisoned"
+		],
+		"passive": 15,
+		"languages": [
+			"Any 8 languages"
+		],
+		"cr": "10",
+		"trait": [
+			{
+				"name": "Deflect Missiles",
+				"entries": [
+					"When the drunken master is hit by a ranged weapon attack, the damage is reduced by 25 ({@dice 1d10 + 20})."
+				]
+			},
+			{
+				"name": "Drunkard's Luck (1/Turn)",
+				"entries": [
+					"When the drunken master has disadvantage on an attack roll, ability check, or saving throw, it can choose either result for that roll."
+				]
+			},
+			{
+				"name": "Drunken Technique",
+				"entries": [
+					"The drunken master does not trigger opportunity attacks when it moves on its turn. Also, when {@condition prone}, the drunken master can spend 5 feet of movement to stand up."
+				]
+			},
+			{
+				"name": "Ki Fists",
+				"entries": [
+					"The drunken master's unarmed strikes are magical."
+				]
+			},
+			{
+				"name": "Legendary Resistances (3/Day)",
+				"entries": [
+					"When the drunken master fails a saving throw, it can choose to succeed instead."
+				]
+			},
+			{
+				"name": "Lucky (3/Day)",
+				"entries": [
+					"The drunken master can re-roll an attack roll, ability check, or saving throw it makes and use either result."
+				]
+			},
+			{
+				"name": "Slow Fall",
+				"entries": [
+					"The drunken master takes no damage as a result of a fall."
+				]
+			},
+			{
+				"name": "Unarmored Defense",
+				"entries": [
+					"While the drunken master isn't wearing armor, its armor class equals 10 plus its Dexterity modifier plus its Wisdom modifier."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The drunken master makes two unarmed strikes against each creature within 5 feet of its position."
+				]
+			},
+			{
+				"name": "Unarmed Strike",
+				"entries": [
+					"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@b Hit}: 7 ({@damage 1d4 + 5}) bludgeoning damage."
+				]
+			}
+		],
+		"reaction": [
+			{
+				"name": "Redirect Attack",
+				"entries": [
+					"When a creature misses the drunken master with a melee attack roll, the drunken master can use its reaction to cause that attack to hit one creature of its choice, other than the attacker, that it can see within 5 feet of it."
+				]
+			}
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"actionTags": [
+			"Multiattack"
+		]
+	},
+	{
+		"name": "Savager",
+		"environment": [
+			"forest",
+			"plains"
+		],
+		"size": "L",
+		"type": "beast",
+		"source": "ToB",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 17,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 115,
+			"formula": "1d10 + 60"
+		},
+		"speed": {
+			"walk": 40,
+			"climb": 20
+		},
+		"str": 22,
+		"dex": 14,
+		"con": 22,
+		"int": 2,
+		"wis": 10,
+		"cha": 13,
+		"save": {
+			"dex": "+5",
+			"con": "+9"
+		},
+		"skill": {
+			"perception": "+3"
+		},
+		"resist": [
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical weapons",
+				"cond": true
+			}
+		],
+		"conditionImmune": [
+			"charmed",
+			"frightened"
+		],
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 13,
+		"cr": "8",
+		"trait": [
+			{
+				"name": "Mighty Swing",
+				"entries": [
+					"When a savager attacks without moving during its turn, it makes its claw attack with advantage."
+				]
+			},
+			{
+				"name": "Quills",
+				"entries": [
+					"A creature takes 4 ({@damage 1d8}) piercing damage at the start of its turn while it is grappling a savager."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The savager makes one bite attack and one claw attack."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d12 + 6}) piercing damage."
+				]
+			},
+			{
+				"name": "Claw",
+				"entries": [
+					"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}38 ({@damage 5d12 + 6}) slashing damage."
+				]
+			}
+		],
+		"page": 338,
+		"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Savager.png",
+		"fluff": {
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Savager.webp"
+					}
+				}
+			],
+			"entries": [
+				"{@i A porcupine-quilled creature built like a grizzly bear with claws and fangs like scimitars. A savager's forelegs are mangled and scabbed, and its eyes shine with hatred and anticipation.}",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Driven by Dark Spirits",
+									"entries": [
+										"While druids claim these bear-like animals are not cursed or enchanted, the savager's habit of killing any living creature on sight is not natural behavior. Hunger doesn't explain their attacks, since savagers eat only part of their kills before abandoning the meal and looking for other animals to attack. Some dark forest spirit drives them."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Gnaws Itself",
+									"entries": [
+										"When there are no other creatures nearby to attack, a savager gnaws on its own forelimbs, resulting in scabs, scars, and calluses so thick and numb that they protect the savager from even the sharpest of swords."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Rare Meetings",
+									"entries": [
+										"The only creature a savager won't attack on sight is another savager. If they are of the same sex, the two avoid each out of selfpreservation, and if they're of the opposite sex, they mate so ferociously that both creatures are left wounded, angry, and hungry. A savager litter contains anywhere from 10 to 25 cubs, all of them born able to walk and fend for themselves. This is important, because within 24 hours after giving birth, a savager mother no longer recognizes her own offspring, and she will attack and cannibalize any that don't escape on their own.",
+										"A savager weighs 1,800 pounds and is 11 feet long."
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"actionTags": [
+			"Multiattack"
+		],
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW",
+			"RCH"
+		]
+	}
+]
